@@ -10,5 +10,4 @@ chatRoutes.post(
   verifyToken,
   generateChatCompletion
 );
-
 export default chatRoutes;

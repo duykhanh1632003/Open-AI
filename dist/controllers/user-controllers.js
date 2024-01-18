@@ -97,6 +97,7 @@ export const verifyUser = async (req, res, next) => {
         if (user._id.toString() !== res.locals.jwtData.id) {
             return res.status(401).send("Permissions didn't match");
         }
+        console.log("Check done");
         return res
             .status(200)
             .json({ message: "OK", name: user.name, email: user.email });
